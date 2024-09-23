@@ -4,9 +4,13 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply bg-white dark:bg-gray-100;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
 }
